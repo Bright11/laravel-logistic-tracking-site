@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #EC1525;
+}
+
+#mynav {
+    background-color: white;
+    box-shadow: 2px 4px 6px 0px black;
+    height: 60px;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 99 !important;
+
+}
+
+#mynav #navul li a {
+    text-decoration: none !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray !important;
+}
+
+#mynav #navul li a:hover {
+    color: #EC1525 !important;
+}
+
+li {
+    list-style: none;
+}
+
+#mynav #navul li:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color)
+}
+
+
+.logo img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+#mynav #navul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#mynav .nobilebtn {
+    background-color: transparent;
+    display: none;
+}
+
+#mynav .nobilebtn i {
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#countnav {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 4px;
+}
+
+
+#navcat {
+    background-color: #EC1525;
+    border-radius: 100%;
+    color: white;
+    padding: 10px;
+}
+
+
+.searchbtn{
+    border: none;
+    background-color: #EC1525;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* .seacherform .searchinput {
+    padding: 10px !important;
+    outline: none;
+} */
+ @media  screen and (max-width: 1050px) {
+#mynav .nobilebtn {
+        background-color: transparent;
+        display: block;
+    }
+
+    .hidmobil {
+        display: none !important;
+    }
+
+    #navul>li {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        padding: 10px 20px;
+
+    }
+
+    #mynav #navul {
+        flex-direction: column;
+        margin-top: 450px;
+        gap: 10px;
+        background-color: #FFFFFF;
+        width: 100%;
+
+    }
+
+    #mynav {
+
+        justify-content: space-between;
+
+    }
+}
+
+/*  */
+@media screen and (max-width:768px) {
+    #mynav .nobilebtn {
+        background-color: transparent;
+        display: block;
+    }
+
+    .hidmobil {
+        display: none !important;
+    }
+
+    #navul>li {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        padding: 10px 20px;
+
+    }
+
+    #mynav #navul {
+        flex-direction: column;
+        margin-top: 450px;
+        gap: 10px;
+        background-color: #FFFFFF;
+        width: 100%;
+
+    }
+
+    #mynav {
+
+        justify-content: space-between;
+
+    }
+}
+
+/* tablate */
+/* @media screen and (max-width:768px) */
+
+
+/* tables */
+tbody {
+    border: none !important;
+}
+
+thead>tr {
+    background-color: #EE2E3C;
+    border: none !important;
+    color: white;
+}
+
+/* the end */

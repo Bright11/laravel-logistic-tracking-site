@@ -1,0 +1,43 @@
+.loginpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+
+
+.loginbtn {
+    background-color: #EC1525;;
+    width: 30vw;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.loginpage form{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+}
+
+.loginpage form input{
+padding: 10px;
+width: 100%;
+margin: 8px 0px;
+outline: none;
+}
+.donhaveaccount{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.donhaveaccount:hover{
+    color: #EC1525;
+}

@@ -1,0 +1,38 @@
+.checkoutpage {
+    display: flex;
+    gap: 20px;
+    margin: 0px 10px;
+    flex-direction: column;
+}
+
+.userinfo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.userinfo>h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.userinfo>form {
+    display: flex;
+    flex-direction: column;
+width: 50%;
+}
+
+.userinfo>form>input,textarea {
+    padding: 10px;
+    margin: 8px 0px;
+    outline: none;
+}
+
+.ordersubmit{
+    background-color: #EB8A12;
+    color: white;
+    font-size: 20px;
+    border: none;
+}

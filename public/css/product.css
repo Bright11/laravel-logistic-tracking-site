@@ -1,0 +1,138 @@
+.products {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product_holder {
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product__info {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.product_holder img {
+    height: 250px;
+    width: 18rem;
+    border-radius: 16px;
+}
+
+.addtocat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* .addtocat button { */
+.addtocat button {
+    padding: 8px;
+    border: none;
+    font-size: 18px;
+    background-color: #EA8100;
+    color: white;
+    cursor: pointer;
+    /* text-decoration: none; */
+}
+
+/* add to wishlist */
+.percentage {
+    position: absolute;
+    top: 0;
+    /* background-color: #EC1525; */
+    background-color: #EA8100;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.percentage button {
+    /* background-color: #EC1525; */
+    background-color: #EA8100;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product__info h1 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* carttdpage */
+.cartpage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 20px;
+}
+.carttdpage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  margin: 0px 20px;
+}
+
+.carttdpage img {
+    max-width: 100px;
+    border-radius: 20px;
+}
+
+.cartsopping a {
+    text-decoration: none !important;
+    background-color: #EA8100;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+}
+.deletecart{
+    text-decoration: none;
+    color:#EB8A12;
+    padding: 10px;
+    cursor: pointer;
+}
+.deletecart:hover{
+    color: #EB8A12;
+}
+
+.product_holder a{
+    text-decoration: none;
+    color: black;
+}
+.plusandminus{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin: 0px;
+}
+.plusandminus>form>input{
+    max-width: 50px;
+}
+.plusandminus>form>button{
+    border: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #EB8A12;
+        color: white;
+        padding: 5px;
+}
+.plusandminus>form>button:hover{
+    background-color: #EC1525;
+    color: white;
+    padding: 5px;
+}
