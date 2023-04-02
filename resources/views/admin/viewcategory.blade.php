@@ -27,7 +27,7 @@
       <th scope="row">{{$c->name}}</th>
       <td colspan="2" class="admintdimg"><img class="adminproimg" src="{{ Storage::url($c->image) }}" alt=""></td>
 
-       <td><a class="admindelete" href="">Send to Trash</a></td>
+       <td><a class="admindelete" href="editcat/{{$c->id}}">Edite</a></td>
     </tr>
    @empty
 

@@ -1,6 +1,8 @@
 <nav class="mynav" id="mynav">
     <div class="logo">
-        <img src="/logo/security.png" alt="logo" />
+        <a href="/">
+            <img src="/logo/security.png" alt="logo" />
+        </a>
         {{-- security.png --}}
     </div>
     <ul id="navul" class="hidmobil">

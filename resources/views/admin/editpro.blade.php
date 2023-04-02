@@ -27,6 +27,8 @@
                         @endforelse
                 </select>
                 <textarea rows="8" cols="50" name="description">{{$pro->description}}</textarea>
+				 <label>Keywords</label>
+                  <textarea rows="8" cols="50" name="keywords">{{$pro->keywords}}</textarea>
                 <input type="file" name="image" />
                 <input class="submit" type="submit" value="Submit" />
             </form>

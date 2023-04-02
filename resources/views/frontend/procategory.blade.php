@@ -56,7 +56,7 @@
         {{-- the end --}}
 
         <div class="page">
-            {{-- {{ $getpro->links() }} --}}
+            {{ $procat->links() }}
         </div>
     </div>
 

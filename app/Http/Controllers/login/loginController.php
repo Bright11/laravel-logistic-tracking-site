@@ -37,11 +37,11 @@ class loginController extends Controller
         //$register->password=Hash::make("password");
         $register->password = Hash::make($req->password);
         $register->save();
-        if($register){
-            $user=User::where('email',$req->email)->first();
-            $shipping=new Shipping;
-            $shipping->user_id=$user->id;
-            $shipping->email=$user->email;
+        if ($register) {
+            $user = User::where('email', $req->email)->first();
+            $shipping = new Shipping;
+            $shipping->user_id = $user->id;
+            $shipping->email = $user->email;
             $shipping->save();
             return redirect('login');
         }
@@ -50,8 +50,10 @@ class loginController extends Controller
     public function loginuser(Request $req)
     {
         $validated = $req->validate([
-            'email' => 'required|email',
-            'password' => 'required',
+            'email' => 'required|unique:users|email',
+            'password' => 'required|min:6',
+            'name' => 'required',
+            'cpassword' => 'required_with:password|same:password|min:6'
         ]);
         $myemail = strtolower($req->email);
         $user = Auth::attempt(['email' => $myemail, 'password' => $req->password, 'isAdmin' => 0]);
@@ -82,13 +84,13 @@ class loginController extends Controller
         //htrtpgVfldk[UyQj
 
         //khglHopmdeVYgthH
-        $track=Shipping::where('user_id',Auth::user()->id)->where('tracking_code',$req->track)->first();
-        $trackall = Order::where('user_id', Auth::user()->id)->where('order_status','new')->get();
-       if($track){
-            return view('frontend.trackingorder', ['track' => $track, 'trackall'=> $trackall]);
-       }else{
-        return redirect()->back();
-       }
+        $track = Shipping::where('user_id', Auth::user()->id)->where('tracking_code', $req->track)->first();
+        $trackall = Order::where('user_id', Auth::user()->id)->where('order_status', 'new')->get();
+        if ($track) {
+            return view('frontend.trackingorder', ['track' => $track, 'trackall' => $trackall]);
+        } else {
+            return redirect()->back();
+        }
     }
 
     public function logout(Request $req)

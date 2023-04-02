@@ -3,8 +3,7 @@
  <title>Maximum Global Security</title>
 @endsection
 @section('description')
-<meta name="description" content="Maximum Global Security">
-<meta name="keywords" content="social security,social security administration,social security office near me,social security office,security cameras,security service,in home security camera,home security,security systems">
+
 @endsection
 @push('stylesheet')
 
@@ -23,19 +22,21 @@
        @include('frontend.layouts.saerchform')
         <div class="banna__image"
             style="background-image: url('/image/topbackground.avif')">
+			<style>
 
+			</style>
             <div class="banner_content">
 
                 <div class="banner_right">
 
-                    <h2>Reliable Trucking and Transportation Services.</h2>
+                    <h2>Reliable Tracking and Transportation Services.</h2>
                     <p> Maximum Security Solutions for Your Successful Business</p>
                 </div>
                 <div class="banner_left">
                     <h1>Get in touch with us</h1>
                     {{-- <button>Request a call</button> --}}
                     <a href="tel:+3197005034068">+3197005034068</a>
-                    {{-- <button>Contact us</button> --}} <a href=" https://wa.me/3197005034068">WhatsApp</a>
+                    {{-- <button>Contact us</button> --}} <a href=" https://wa.me/3197005034068">WhatsApp Message</a>
                 </div>
             </div>
 
@@ -48,7 +49,7 @@
                 <div class="advantage_holder">
                     <i class="fa-sharp fa-solid fa-plane"></i>
                     <h1>Fast Delivery</h1>
-                    <p>Cooperating with Maximum Global Security, you are guaranteed to have your goods delivered fast and secure.</p>
+                    <p>Cooperating with Maximum Global Security, you are guaranteed to have your goods delivered fast</p>
                 </div>
                 <div class="advantage_holder">
                     <i class="fa-solid fa-phone-volume"></i>
@@ -61,11 +62,11 @@
                     <p>We provide all our clients with professional transportation services on the highest security level.
                     </p>
                 </div>
-                <div class="advantage_holder">
+                {{-- <div class="advantage_holder">
                     <i class="fa-solid fa-money-check-dollar"></i>
                     <h1>Affordable Prices</h1>
                     <p>We have the lowest prices on the market and offer affordable solutions tailored to your business.</p>
-                </div>
+                </div> --}}
 
             </div>
             {{-- products --}}
@@ -81,7 +82,7 @@
 
                         <div class="product__info">
                             <h1>{{ $p->name }}</h1>
-                            <p> {{ Str::limit($p->description, 30, $end = '...') }}</p>
+                            {{-- <p> {{ Str::limit($p->description, 30, $end = '...') }}</p> --}}
                             <div class="percentage">
                                 <button>{{ $p->discount_price }}%</button>
                             </div>
@@ -92,8 +93,7 @@
 
                                       <form  action="/addtocartnow/{{$p->id}}" method="post">
                                                 @csrf
-                                    <button type="submit"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Add to
-                                        cart</button>
+                                    <button type="submit"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
                                 </form>
 
                             </div>

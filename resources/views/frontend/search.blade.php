@@ -11,14 +11,13 @@
     {{-- <link rel="stylesheet" href="css/pageniation.css"> --}}
 @endpush
 @section('content')
-    <input type="hidden" class="s">
-    <div class="s"></div>
 
     <div class="index__content">
         {{-- @include('frontend.slider.topimage') --}}
 
         {{-- products --}}
-
+  @include('frontend.categorydatatop')
+       @include('frontend.layouts.saerchform')
 
         <div class="products">
 
@@ -58,7 +57,7 @@
         {{-- the end --}}
 
         <div class="page">
-            {{-- {{ $getpro->links() }} --}}
+            {{ $getpro->links() }}
         </div>
     </div>
 

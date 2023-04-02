@@ -1,4 +1,11 @@
-.userpage {}
+:root {
+    --logocolor: #0ECCA9;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.userpage {
+    margin: 10px auto;
+    padding: 10px;
+}
 
 .user__container {
     display: flex;
@@ -11,7 +18,7 @@
 }
 
 .user_dashboard>ul>li {
-    background-color: #EC1525;
+    background-color: var(--logocolor);
     margin: 10px 0px;
     padding: 8px;
 }
@@ -38,7 +45,7 @@
 .myinfo {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
-    border: 0.1px solid #EC1525;
+    border: 0.1px solid var(--logocolor);
     display: flex;
     flex-direction: column;
     align-items: center;

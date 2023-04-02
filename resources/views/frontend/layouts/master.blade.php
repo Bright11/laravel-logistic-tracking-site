@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{-- recaptcha --}}
+     {{-- {!! htmlScriptTagJsApi() !!} --}}
     @yield('description')
+	<meta name="description" content="Maximum Global Security">
+<meta name="keywords" content="social security,social security administration,social security office near me,social security office,security cameras,security service,in home security camera,home security,security systems">
     <link rel="icon" type="image/x-icon" href="{{asset('logo/security.ico')}}">
    @yield('title')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">

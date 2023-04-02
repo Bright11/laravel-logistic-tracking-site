@@ -1,3 +1,7 @@
+:root {
+    --logocolor: #0ECCA9;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .checkoutpage {
     display: flex;
     gap: 20px;
@@ -31,7 +35,7 @@ width: 50%;
 }
 
 .ordersubmit{
-    background-color: #EB8A12;
+    background-color: var(--logocolor);
     color: white;
     font-size: 20px;
     border: none;

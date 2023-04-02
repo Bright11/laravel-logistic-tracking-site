@@ -26,6 +26,7 @@
 </style>
 <div class="not_found">
 <div>
+	<p>Server error please try again</p>
     <a href="/">Back home</a>
 </div>
 </div>

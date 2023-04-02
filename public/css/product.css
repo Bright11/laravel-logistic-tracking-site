@@ -1,14 +1,34 @@
+body{
+    /* background-image:linear-gradient(black, black), url('../logo/security.png');
+    background-position:center;
+    background-size: cover; */
+    background-image:
+            linear-gradient(to bottom, rgb(245, 243, 242), rgba(254, 254, 255, 0.938)),
+        url('../logo/security.png');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+:root{
+    --logocolor: #0ECCA9;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .products {
-    margin-top: 50px;
+    margin: 50px auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 80vw;
+    padding: 10px;
 }
 
 .product_holder {
     padding: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     position: relative;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -30,6 +50,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    padding: 0px 10px;
 }
 
 /* .addtocat button { */
@@ -37,20 +58,22 @@
     padding: 8px;
     border: none;
     font-size: 18px;
-    background-color: #EA8100;
+    background-color:var(--logocolor);
     color: white;
     cursor: pointer;
     /* text-decoration: none; */
 }
-
+.addtocat>h2{
+    font-size: 16px;
+}
 /* add to wishlist */
 .percentage {
     position: absolute;
     top: 0;
     /* background-color: #EC1525; */
-    background-color: #EA8100;
-    width: 50px;
-    height: 50px;
+    background-color:var(--logocolor);
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -60,12 +83,12 @@
 
 .percentage button {
     /* background-color: #EC1525; */
-    background-color: #EA8100;
-    border: none;
+    background-color:var(--logocolor);
     color: white;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    border: none;
 }
 
 .product__info h1 {
@@ -95,19 +118,19 @@
 
 .cartsopping a {
     text-decoration: none !important;
-    background-color: #EA8100;
+    background-color:var(--logocolor);
         color: white;
         font-size: 18px;
         padding: 10px;
 }
 .deletecart{
     text-decoration: none;
-    color:#EB8A12;
+    color:var(--logocolor);
     padding: 10px;
     cursor: pointer;
 }
 .deletecart:hover{
-    color: #EB8A12;
+    color: var(--logocolor);
 }
 
 .product_holder a{
@@ -127,12 +150,76 @@
     border: none;
     font-size: 20px;
     text-transform: capitalize;
-    background-color: #EB8A12;
+    background-color: var(--logocolor);
         color: white;
+        font-weight: 300;
         padding: 5px;
 }
 .plusandminus>form>button:hover{
-    background-color: #EC1525;
+    background-color: var(--logocolor);
     color: white;
     padding: 5px;
+}
+
+
+/* details page */
+
+ .detailsdivid {
+     margin-bottom: 50px !important;
+ }
+
+ .detailspage {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin: 50px auto;
+     max-width: 80vw;
+     align-items: center;
+ }
+
+ .detailsimg img {
+     width: 100%;
+     max-width: 350px;
+ }
+
+ .detailsright {
+     display: flex;
+     flex-direction: column;
+     gap: 20px
+ }
+
+ .detailsright>button {
+     background-color: var(--logocolor);
+     padding: 10px;
+     border: none;
+     color: white;
+
+ }
+
+ .detailsright>form>button {
+     background-color: var(--logocolor);
+     width: 100%;
+     padding: 10px;
+     font-size: 20px;
+     border: none;
+     cursor: pointer;
+     color: white
+ }
+
+ .description {
+     text-align: center;
+
+     padding: 10px;
+    margin: 30px auto;
+        max-width: 80vw;
+
+ }
+.description>p{
+    font-family:var(--font-family);
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+   color: rgb(88, 87, 87);
+   line-height: 1.8;
+
 }

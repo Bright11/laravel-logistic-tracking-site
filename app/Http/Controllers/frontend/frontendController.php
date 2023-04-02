@@ -19,7 +19,7 @@ class frontendController extends Controller
 {
     public function index()
     {
-        $pro = Product::paginate(8);
+        $pro = Product::paginate(12);
         return view('frontend.index', ['pro' => $pro]);
     }
 
@@ -37,6 +37,9 @@ class frontendController extends Controller
     }
     public function addtocartnow(Request $req, $id)
     {
+        if(Auth::user()){
+
+
         $cart = new Cart;
 
         $findpro =    Product::find($id);
@@ -54,6 +57,9 @@ class frontendController extends Controller
             $cart->qty = 1;
             $cart->save();
             return redirect()->back()->with('status', 'Success');
+        }
+        } else {
+            return redirect('login')->with('status', 'Success');
         }
     }
 

@@ -1,10 +1,22 @@
-:root {
-    --primary-color: #EC1525;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+:root {
+    --primary-color: #0ECCA9;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+--logocolor: #0ECCA9;
+}
+body {
+
+   font-family:var(--font-family);
+
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family:var(--font-family);
+}
 #mynav {
     background-color: white;
-    box-shadow: 2px 4px 6px 0px black;
+    /* box-shadow: 2px 4px 6px 0px black; */
     height: 60px;
     /* justify-content: space-around; */
     justify-content: space-between;
@@ -23,9 +35,10 @@
 #mynav #navul li a {
     text-decoration: none !important;
     font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform: capitalize;
+    font-weight: 600;
     color: gray !important;
+	 font-family: var(--font-family);
 }
 
 #mynav #navul li a:hover {
@@ -78,16 +91,17 @@ li {
 
 
 #navcat {
-    background-color: #EC1525;
+    /* background-color: #EC1525; */
     border-radius: 100%;
     color: white;
     padding: 10px;
+    background-color: var(--logocolor);
 }
 
 
 .searchbtn{
     border: none;
-    background-color: #EC1525;
+    background-color:var(--logocolor);
     padding: 10px;
     color: white;
     font-size: 20px;
@@ -174,7 +188,7 @@ tbody {
 }
 
 thead>tr {
-    background-color: #EE2E3C;
+    background-color: var(--logocolor);
     border: none !important;
     color: white;
 }

@@ -16,51 +16,7 @@
     @include('frontend.layouts.saerchform')
 
         <style>
-            .detailsdivid{
-                  margin-bottom: 50px !important;
-            }
-            .detailspage {
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                margin: 50px 0px;
-            }
 
-            .detailsimg img{
-                width: 100%;
-                max-width: 350px;
-            }
-            .detailsright{
-                display: flex;
-                flex-direction: column;
-                gap: 20px
-            }
-
-            .detailsright>button{
-          background-color:#EB8A12;
-          padding: 10px;
-          border: none;
-          color: white;
-
-            }
-            .detailsright>form>button{
-                background-color: #EB8A12;
-                width: 100%;
-                padding: 10px;
-                font-size: 20px;
-                border: none;
-                cursor: pointer;
-                color: white
-            }
-            .description {
-                margin-bottom: 80px;
-                text-align: center;
-                margin-top: 30px;
-                padding: 10px;
-                width: 100%;
-                 max-width: 85vw;
-
-            }
         </style>
 
       <div class="detailspage">

@@ -27,7 +27,7 @@
                 </select>
                 <textarea rows="8" placeholder="description" cols="50" name="description"></textarea>
                 <label>Keywords</label>
-                  <textarea rows="8" placeholder="keywords, gun, bullet,etc" cols="50" name="keywords"></textarea>
+                  <textarea rows="8" placeholder="keywords, item name, item related name, name,etc" cols="50" name="keywords"></textarea>
                 <input type="file" name="image" />
                 <input class="submit" type="submit" value="Submit" />
             </form>

@@ -4,7 +4,9 @@
 }
 
 :root {
-    --primary-color: #EC1525;
+    --primary-color: #0ECCA9;
+
+    --font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .index__content {
@@ -18,20 +20,25 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    margin: 0px 10px;
 }
 
 .banner_content {
     display: flex !important;
     justify-content: space-between !important;
     padding: 200px 10px;
+    flex-wrap: wrap;
 }
 
-.banner_left>h1 {
+.banner_left > h1 {
     color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-family);
 }
 
 .banner_left {
-    background-color: #6F6956;
+    background-color:black;
     padding: 25px;
     border-radius: 10px;
     display: flex;
@@ -52,39 +59,59 @@
     /* overlay color with 50% opacity */
 }
 
-
-
 .banner_left a {
-    background-color: #EC1525;
+    background-color: white;
     padding: 18px;
     border: 0;
     text-decoration: none;
     margin: 10px 0px;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-family);
     cursor: pointer !important;
 }
 
-.banner_right>h2 {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+.banner_right > h2 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-family);
     text-transform: uppercase;
-}
-
-.banner_right>p {
+    margin-bottom: 10px;
     color: white;
-    font-size: 20px;
+}
+.banner_right > p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: white;
 }
 
 .advantage {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 90px 0px;
+    margin: 90px auto;
+    max-width: 80vw;
 }
-
+.advantage > h1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: black;
+}
+.advantage>h1::after{
+    content: "--------------";
+    color: var(--primary-color);
+}
+.advantage>h1::before {
+    content: "--------------";
+    color: var(--primary-color);
+}
 .advantage_content {
     display: flex;
     justify-content: space-around;
@@ -95,28 +122,42 @@
 
 .advantage_holder {
     display: flex;
-    justify-content: center;
+
     align-items: center;
     flex-direction: column;
     width: 300px !important;
 }
 
-.advantage_holder>i {
-    font-size: 40px;
-    color: #EC1525;
+.advantage_holder > i {
+    font-size: 30px;
+    color:black;
     margin: 10px 0px;
 }
-
-.advantage_holder>p {
+.advantage_holder>h1{
+    font-size: 25px;
+        font-weight: 400;
+        font-family: var(--font-family);
+        margin-bottom: 20px;
+}
+/* .advantage_holder>h1::after{
+    content: '------';
+    color: var(--primary-color);
+}
+.advantage_holder>h1::before {
+    content: '------';
+    color: var(--primary-color);
+} */
+.advantage_holder > p {
     padding: 0px 20px;
     font-size: 20px;
-    color: lightgray;
-
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: black;
+    text-align: center;
+    line-height: 1.4;
 }
 
-
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .banna__image {
         height: 600px;
     }
@@ -136,8 +177,7 @@
 }
 
 /* tablate */
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
     .advantage_content {
         flex-wrap: wrap;
     }
@@ -147,11 +187,16 @@
         margin: 20px 0px;
     }
 
-
+    .contact > form {
+        display: flex !important;
+        flex-direction: column !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px;
+        width: 90vw;
+    }
 }
 
-@media screen and (max-width:900px) {
-
+@media screen and (max-width: 900px) {
     .advantage_content {
         flex-wrap: wrap;
     }
@@ -170,16 +215,14 @@
 /* footer_container */
 
 .footer_container {
-    background-color: #0D0D0D;
+    background-color: #0d0d0d;
     text-align: center;
     color: white;
     padding: 10px;
 }
 
-.footer_container>p {
-
+.footer_container > p {
     text-align: center;
-
 }
 
 /* track */
@@ -200,7 +243,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .trackbtn form .input {
@@ -212,7 +254,7 @@
 
 .trackbtn form .submit {
     padding: 18px;
-    background-color: #EC1525;
+    background-color:var(--primary-color);
     width: 30vw;
     margin: 10px 0px;
     border: 0;
@@ -222,7 +264,6 @@
     cursor: pointer;
 }
 
-
 /* about */
 .about {
     display: flex;
@@ -230,15 +271,16 @@
     align-items: center;
     flex-direction: column;
     padding: 8px;
-    margin: 20px 8px;
+    margin: 20px auto;
+    max-width: 80vw;
 }
 
-.about>h3 {
+.about > h3 {
     font-size: 25px;
     /* font-family: 'Courier New', Courier, monospace; */
 }
 
-.about>p {
+.about > p {
     font-size: 20px;
 }
 
@@ -254,15 +296,15 @@
     left: 0;
     gap: 10px;
     padding: 0px 10px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
-.categeory .cateul>li {
+.categeory .cateul > li {
     padding: 10px;
     list-style: none;
 }
 
-.categeory .cateul>li a {
+.categeory .cateul > li a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -273,7 +315,6 @@
     display: none;
 }
 
-
 /* contact */
 
 .contact {
@@ -281,29 +322,30 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-margin: 70px;
 }
 
-.contact>form {
+.contact > form {
     display: flex !important;
     flex-direction: column !important;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
+    width: 80%;
 }
 
-.contact>form>input, textarea{
+.contact > form > input,
+textarea {
     padding: 10px;
     outline: none;
     margin: 8px 0px;
 }
-.contact>form>button{
+.contact > form > button {
     border: none;
     font-size: 20px;
     padding: 8px;
-    background-color: #EF313F;
+    background-color:var(--primary-color);
     color: white;
 }
-.about>.alert{
+.about > .alert {
     margin-top: 20px;
     margin-bottom: 0px;
 }

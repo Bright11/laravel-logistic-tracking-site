@@ -1,3 +1,7 @@
+:root {
+    --logocolor: #0ECCA9;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .loginpage {
     display: flex;
     align-items: center;
@@ -8,7 +12,7 @@
 
 
 .loginbtn {
-    background-color: #EC1525;;
+    background-color: var(--logocolor);
     width: 30vw;
     border: none;
     padding: 10px;
@@ -39,5 +43,16 @@ outline: none;
     margin-top: 10px;
 }
 .donhaveaccount:hover{
-    color: #EC1525;
+    color: var(--logocolor);
+}
+@media screen and (max-width:768px){
+
+.loginpage form{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60vw;
+}
 }
