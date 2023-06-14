@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('title')
- <title>Maximum Global Security</title>
+ <title>Bright Security</title>
 @endsection
 @section('description')
 
@@ -36,7 +36,7 @@
                     <h1>Get in touch with us</h1>
                     {{-- <button>Request a call</button> --}}
                     <a href="tel:+3197005034068">+0000000000000</a>
-                    {{-- <button>Contact us</button> --}} <a href=" https://wa.me/3197005034068">WhatsApp Message</a>
+                    {{-- <button>Contact us</button> --}} <a href=" https://wa.me/9999999999999">WhatsApp Message</a>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
                 <div class="advantage_holder">
                     <i class="fa-sharp fa-solid fa-plane"></i>
                     <h1>Fast Delivery</h1>
-                    <p>Cooperating with Maximum Global Security, you are guaranteed to have your goods delivered fast</p>
+                    <p>Cooperating with Bright Security, you are guaranteed to have your goods delivered fast</p>
                 </div>
                 <div class="advantage_holder">
                     <i class="fa-solid fa-phone-volume"></i>
