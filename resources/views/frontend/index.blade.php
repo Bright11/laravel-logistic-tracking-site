@@ -30,7 +30,7 @@
                 <div class="banner_right">
 
                     <h2>Reliable Tracking and Transportation Services.</h2>
-                    <p> Maximum Security Solutions for Your Successful Business</p>
+                    <p> Bright Security Solutions for Your Successful Business</p>
                 </div>
                 <div class="banner_left">
                     <h1>Get in touch with us</h1>
