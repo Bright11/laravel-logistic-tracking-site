@@ -21,7 +21,7 @@
        @include('frontend.categorydatatop')
        @include('frontend.layouts.saerchform')
         <div class="banna__image"
-            style="background-image: url('/image/topbackground.avif')">
+            style="background-image: url('/image/ttopbackground.jpg')">
 			<style>
 
 			</style>
@@ -35,7 +35,7 @@
                 <div class="banner_left">
                     <h1>Get in touch with us</h1>
                     {{-- <button>Request a call</button> --}}
-                    <a href="tel:+3197005034068">+3197005034068</a>
+                    <a href="tel:+3197005034068">+0000000000000</a>
                     {{-- <button>Contact us</button> --}} <a href=" https://wa.me/3197005034068">WhatsApp Message</a>
                 </div>
             </div>
