@@ -10,7 +10,7 @@
     @yield('description')
 	<meta name="description" content="Maximum Global Security">
 <meta name="keywords" content="social security,social security administration,social security office near me,social security office,security cameras,security service,in home security camera,home security,security systems">
-    <link rel="icon" type="image/x-icon" href="{{asset('logo/security.ico')}}">
+    <link rel="icon" type="image/x-icon" href="{{asset('')}}">
    @yield('title')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     @stack('stylesheet')
